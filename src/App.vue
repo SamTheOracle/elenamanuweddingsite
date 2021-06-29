@@ -2,7 +2,9 @@
   <v-app>
     <v-app-bar app color="white" light dense inverted-scroll>
       <v-spacer />
-      <v-toolbar-title class="main-title">Elena e Emanuele</v-toolbar-title>
+      <v-toolbar-title class="toolbar-title"
+        >Elena e Emanuele</v-toolbar-title
+      >
       <v-spacer />
     </v-app-bar>
 
@@ -39,8 +41,13 @@ export default {
 </script>
 <style>
 .main-title {
-  font-family: "Satisfy", cursive;
+  font-family: "Dosis", sans-serif;
   font-size: 34px;
+  font-weight: 200;
+}
+.toolbar-title {
+  font-family: "Dosis", sans-serif;
+  font-size: 30px;
 }
 .component-subtitle {
   font-family: "Montserrat", sans-serif;

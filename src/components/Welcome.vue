@@ -1,6 +1,6 @@
 <template>
   <v-container fluid>
-    <div class="main-title text-center">Elena e Emanuele</div>
+    <div class="main-title text-center mb-4">Elena e Emanuele</div>
     <v-img
       class="mx-auto"
       lazy-src=""
@@ -20,3 +20,4 @@ export default {
 
 <style>
 </style>
+
