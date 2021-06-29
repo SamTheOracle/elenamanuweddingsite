@@ -2,9 +2,7 @@
   <v-app>
     <v-app-bar app color="white" light dense inverted-scroll>
       <v-spacer />
-      <v-toolbar-title class="toolbar-title"
-        >Elena e Emanuele</v-toolbar-title
-      >
+      <v-toolbar-title class="toolbar-title">Elena e Emanuele</v-toolbar-title>
       <v-spacer />
     </v-app-bar>
 
@@ -15,12 +13,14 @@
       <party />
       <v-divider class="mx-4 ma-4" />
       <useful-info />
+      <made-by class="ma-8"/>
     </v-main>
   </v-app>
 </template>
 
 <script>
 import Date from "./components/Date.vue";
+import MadeBy from './components/MadeBy.vue';
 import Party from "./components/Party.vue";
 import UsefulInfo from "./components/UsefulInfo.vue";
 import Welcome from "./components/Welcome.vue";
@@ -33,6 +33,7 @@ export default {
     Date,
     Party,
     UsefulInfo,
+    MadeBy,
   },
   data: () => ({
     //
