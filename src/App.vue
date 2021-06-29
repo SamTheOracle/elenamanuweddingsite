@@ -2,7 +2,7 @@
   <v-app>
     <v-app-bar app color="white" light dense inverted-scroll>
       <v-spacer />
-      <v-app-title class="main-title">Elena e Emanuele</v-app-title>
+      <v-toolbar-title class="main-title">Elena e Emanuele</v-toolbar-title>
       <v-spacer />
     </v-app-bar>
 
@@ -60,5 +60,29 @@ export default {
   font-size: 15px;
   font-weight: 300;
   white-space: pre-line;
+}
+.list-item-title {
+  font-family: "Dosis", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  white-space: pre-line;
+}
+.list-item-subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  -webkit-line-clamp: 3 !important;
+}
+
+@media only screen and (min-width: 601px) {
+  .component-subtitle {
+    font-size: 30px;
+  }
+  .component-title {
+    font-size: 45px;
+  }
+  .button-subtitle {
+    font-size: 20px;
+  }
 }
 </style>
