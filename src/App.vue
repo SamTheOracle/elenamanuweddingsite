@@ -71,7 +71,7 @@ export default {
   font-family: "Montserrat", sans-serif;
   font-size: 15px;
   font-weight: 300;
-  -webkit-line-clamp: 3 !important;
+  -webkit-line-clamp: 5 !important;
 }
 
 @media only screen and (min-width: 601px) {
