@@ -14,7 +14,7 @@
       @click="onOracleClick()"
       color="#607D8B"
       dark
-      >SamTheOracle</v-btn
+      >Giacomo</v-btn
     >
     </div>
   </v-sheet>
