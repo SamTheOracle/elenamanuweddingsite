@@ -36,7 +36,7 @@ export default {
       },
       {
         title: "Un tampone di qualsiasi tipo ",
-        subtitle: "Molecolare, rapido, salivare) entro le 48 ore precedenti. ",
+        subtitle: "Molecolare, rapido, salivare entro le 48 ore precedenti. ",
         icon: "swab.svg",
       },
     ],
