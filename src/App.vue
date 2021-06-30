@@ -12,16 +12,10 @@
 
       <date />
       <v-divider class="ma-4 mx-auto" style="max-width: 80%" />
-      <div v-if="$vuetify.breakpoint.mdAndDown">
+      <div>
         <party />
         <v-divider class="ma-4 mx-auto" style="max-width: 80%" />
         <donation />
-      </div>
-      <div v-else>
-        <v-row align="center" dense>
-          <v-col cols="6"><party /></v-col>
-          <v-col cols="6"><donation /></v-col>
-        </v-row>
       </div>
       <v-divider class="ma-4 mx-auto" style="max-width: 80%" />
       <useful-info />
@@ -95,8 +89,14 @@ export default {
   font-weight: 300;
   -webkit-line-clamp: 5 !important;
 }
+.iban {
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 600;
+  white-space: pre-line;
+}
 @media only screen and (min-width: 1024px) {
-  .main-title{
+  .main-title {
     font-size: 70px;
   }
   .list-item-subtitle {
@@ -132,6 +132,9 @@ export default {
   }
   .button-subtitle {
     font-size: 14px;
+  }
+  .iban{
+    font-size: 15px;
   }
 }
 </style>
