@@ -96,7 +96,9 @@ export default {
   -webkit-line-clamp: 5 !important;
 }
 @media only screen and (min-width: 1024px) {
-
+  .main-title{
+    font-size: 70px;
+  }
   .list-item-subtitle {
     font-size: 20px;
   }
