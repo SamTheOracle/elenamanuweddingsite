@@ -12,7 +12,8 @@
     </v-img>
     <v-img
       v-else
-      max-height="1300px"
+      max-height="1100px"
+      max-width="1100px"
       class="mx-auto"
       transition="fade-transition"
       src="@/assets/front-pic-desktop.jpg"
