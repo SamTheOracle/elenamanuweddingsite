@@ -8,19 +8,32 @@
 
     <v-main>
       <welcome />
+      <v-divider class="ma-4 mx-auto" style="max-width: 80%" />
+
       <date />
-      <v-divider class="mx-4 ma-4" />
-      <party />
-      <v-divider class="mx-4 ma-4" />
+      <v-divider class="ma-4 mx-auto" style="max-width: 80%" />
+      <div v-if="$vuetify.breakpoint.mdAndDown">
+        <party />
+        <v-divider class="ma-4 mx-auto" style="max-width: 80%" />
+        <donation />
+      </div>
+      <div v-else>
+        <v-row align="center" dense>
+          <v-col cols="6"><party /></v-col>
+          <v-col cols="6"><donation /></v-col>
+        </v-row>
+      </div>
+      <v-divider class="ma-4 mx-auto" style="max-width: 80%" />
       <useful-info />
-      <made-by class="ma-8"/>
+      <made-by class="ma-8" />
     </v-main>
   </v-app>
 </template>
 
 <script>
 import Date from "./components/Date.vue";
-import MadeBy from './components/MadeBy.vue';
+import Donation from "./components/Donation.vue";
+import MadeBy from "./components/MadeBy.vue";
 import Party from "./components/Party.vue";
 import UsefulInfo from "./components/UsefulInfo.vue";
 import Welcome from "./components/Welcome.vue";
@@ -34,6 +47,7 @@ export default {
     Party,
     UsefulInfo,
     MadeBy,
+    Donation,
   },
   data: () => ({
     //
@@ -81,7 +95,15 @@ export default {
   font-weight: 300;
   -webkit-line-clamp: 5 !important;
 }
+@media only screen and (min-width: 1024px) {
 
+  .list-item-subtitle {
+    font-size: 20px;
+  }
+  .list-item-title {
+    font-size: 25px;
+  }
+}
 @media only screen and (min-width: 601px) {
   .component-subtitle {
     font-size: 30px;
@@ -91,6 +113,23 @@ export default {
   }
   .button-subtitle {
     font-size: 20px;
+  }
+  .list-item-subtitle {
+    font-size: 18px;
+  }
+  .list-item-title {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .component-subtitle {
+    font-size: 18px;
+  }
+  .component-title {
+    font-size: 30px;
+  }
+  .button-subtitle {
+    font-size: 14px;
   }
 }
 </style>
