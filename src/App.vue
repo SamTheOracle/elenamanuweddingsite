@@ -1,8 +1,8 @@
 <template>
   <v-app>
-    <v-app-bar app color="white" light dense inverted-scroll>
+    <v-app-bar app color="white" light dense inverted-scroll v-if="$vuetify.breakpoint.smAndDown">
       <v-spacer />
-      <v-toolbar-title class="toolbar-title">Elena e Emanuele</v-toolbar-title>
+      <v-toolbar-title class="main-title">Elena e Emanuele</v-toolbar-title>
       <v-spacer />
     </v-app-bar>
 
@@ -51,12 +51,8 @@ export default {
 <style>
 .main-title {
   font-family: "Dosis", sans-serif;
-  font-size: 34px;
+  font-size: 34px !important;
   font-weight: 200;
-}
-.toolbar-title {
-  font-family: "Dosis", sans-serif;
-  font-size: 30px;
 }
 .component-subtitle {
   font-family: "Montserrat", sans-serif;
