@@ -57,7 +57,7 @@ export default {
       {
         title: "Guarigione dal virus",
         subtitle:
-          "Portare un certificato di avvenuta guarigione ASUR risalente al massimo ai 6 mesi precedenti",
+          "Portare un certificato di avvenuta guarigione risalente al massimo ai 6 mesi precedenti",
         icon: "certificate.svg",
       },
       {
